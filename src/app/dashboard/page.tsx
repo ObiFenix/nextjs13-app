@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
+import styles from "../page.module.css";
 
-const Dashboard = () => {
-  return <div>Dashboard</div>;
-};
-
-export default Dashboard;
+export default function Dashboard() {
+  return (
+    <section className={styles.container}>
+      <div>Dashboard</div>
+    </section>
+  );
+}

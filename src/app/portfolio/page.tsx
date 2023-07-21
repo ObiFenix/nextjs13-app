@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
+import styles from "../page.module.css";
 
-const Portfolio = () => {
-  return <div>Portfolio</div>;
-};
-
-export default Portfolio;
+export default function Portfolio() {
+  return (
+    <section className={styles.container}>
+      <div>Portfolio</div>
+    </section>
+  );
+}

@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
+import styles from "../../page.module.css";
 
-const Category = () => {
-  return <div>Category</div>;
-};
-
-export default Category;
+export default function Category() {
+  return (
+    <section className={styles.container}>
+      <div>Category</div>
+    </section>
+  );
+}
