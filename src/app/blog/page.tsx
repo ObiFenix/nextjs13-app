@@ -1,4 +1,4 @@
-import imageUrl from "@public/assets/images/social/fb.png";
+import imageUrl from "@public/images/social/fb.png";
 import { PostProps } from "@src/types/types";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,10 +1,10 @@
 import Footer from "@src/components/footer/Footer";
 import Navbar from "@src/components/navbar/Navbar";
-import { Inter, Roboto, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "@src/context/ThemeContext";
 import type { Metadata } from "next";
 import React from "react";
-import "@public/assets/css/globals.css";
+import "@public/css/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

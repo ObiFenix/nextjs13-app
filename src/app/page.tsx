@@ -1,5 +1,5 @@
 "use client";
-import Hero from "@public/assets/images/hero.png";
+import Hero from "@public/images/hero.png";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "@src/components/button/Button";

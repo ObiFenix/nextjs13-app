@@ -1,8 +1,8 @@
 .container {
   display: flex;
   align-items: center;
-  margin-bottom: 3.125rem;
-  gap: 3.125rem;
+  margin-bottom: 3rem;
+  gap: 3rem;
 }
 
 .image {
@@ -10,10 +10,10 @@
 }
 
 .title {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.6rem;
 }
 
 .description {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   color: #999999;
 }

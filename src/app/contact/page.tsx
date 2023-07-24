@@ -5,7 +5,7 @@ import "../page.module.css";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@src/components/button/Button";
-import ContactImage from "@public/assets/images/contact.png";
+import ContactImage from "@public/images/contact.png";
 
 export default function Contact() {
   return (
