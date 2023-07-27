@@ -7,12 +7,12 @@ import { CATEGORY_ITEMS, ItemProps } from "./data";
 const categoryItemList = (category: string) => CATEGORY_ITEMS[category] || [];
 
 export default function Category({params}: any) {
-  const data: ItemProps[] = categoryItemList(params?.category);
+  const itemList: ItemProps[] = categoryItemList(params?.category);
 
-  return data?.length ? (
+  return (
     <section className={styles.container}>
       <h1 className={styles.categoryTitle}>{params?.category}</h1>
-      {data.map((item: ItemProps): React.JSX.Element => (
+      {itemList?.map((item: ItemProps): React.JSX.Element => (
           <div className={styles.item} key={item.id}>
             <div className={styles.content}>
               <h1 className={styles.title}>{item.title}</h1>
@@ -31,7 +31,5 @@ export default function Category({params}: any) {
         )
       )}
     </section>
-  ) : (
-    <></>
-  );
+  )
 }
