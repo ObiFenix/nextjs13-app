@@ -1,7 +1,7 @@
+import Button from "@src/components/button/Button";
+import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
-import Image from "next/image";
-import Button from "@src/components/button/Button";
 
 export default function About() {
   return (
@@ -14,10 +14,8 @@ export default function About() {
           className={styles.image}
         />
         <div className={styles.imgText}>
-          <h1 className={styles.imgTitle}>Digital Storytellers</h1>
-          <h2 className={styles.imgDescription}>
-            Handcrafting award winning digital experiences
-          </h2>
+          <h1>Digital Storytellers</h1>
+          <h2>Handcrafting award winning digital experiences</h2>
         </div>
       </div>
       <div className={styles.textContainer}>
@@ -27,15 +25,22 @@ export default function About() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. obcaecati
             aliquam minus, odit distinctio, mollitia laboriosam quaerat fugiat
             eveniet ipsum possimus, quasi saepe dolore voluptatum nemo molestias
-            doloremque itaque officia quia quod. Ratione obcaecati labore eum
             odit sapiente totam nisi, veritatis libero Delectus, voluptatem
             doloremque itaque officia quia quod. Ratione obcaecati labore eum.
             <br />
             <br />
-            eveniet ipsum possimus, quasi saepe dolore voluptatum nemo molestias
-            odit sapiente totam nisi, veritatis libero Delectus, voluptatem
-            doloremque itaque officia quia quod. Ratione obcaecati labore eum
-            odit sapiente totam nisi, veritatis libero Delectus, voluptatem.
+            Relevant ipsum possimus, quasi saepe dolore voluptatum nemo
+            molestias odit sapiente totam nisi, veritatis libero Delectus,
+            voluptatem doloremque itaque officia quia quod. Ratione obcaecati
+            labore eum odit sapiente totam nisi, veritatis libero Delectus,
+            voluptatem.
+            <br />
+            <br />
+            Under development itaque officia quia quod. Ratione obcaecati labore
+            public endorsements odit sapiente totam nisi, veritatis libero
+            Delectus, odit sapiente totam nisi, veritatis libero Delectus,
+            voluptatem doloremque itaque officia quia quod. Ratione obcaecati
+            labore eum.
           </p>
         </div>
         <div className={styles.item}>
