@@ -4,14 +4,16 @@ import Image from "next/image";
 import Button from "@src/components/button/Button";
 import { CATEGORY_ITEMS, ItemProps } from "./data";
 
-const categoryItemList = (category: string) => CATEGORY_ITEMS[category] || [];
+const categoryItemList = (category: string) => CATEGORY_ITEMS[category] ?? [];
 
 export default function Category({params}: any) {
   const itemList: ItemProps[] = categoryItemList(params?.category);
 
   return (
     <section className={styles.container}>
-      <h1 className={styles.categoryTitle}>{params?.category}</h1>
+      <h1 className={styles.categoryTitle}>
+        {params?.category}
+      </h1>
       {itemList?.map((item: ItemProps): React.JSX.Element => (
           <div className={styles.item} key={item.id}>
             <div className={styles.content}>
