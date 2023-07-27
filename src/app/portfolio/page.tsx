@@ -19,7 +19,7 @@ export default function Portfolio() {
         />
         <Link
           className={styles.item}
-          href={"/portfolio/application"}
+          href={"/portfolio/applications"}
           children={<span className={styles.title}>Applications</span>}
         />
       </div>
