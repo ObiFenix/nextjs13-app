@@ -4,7 +4,11 @@
   cursor: pointer;
   padding: 1.25rem;
   max-width: max-content;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 0.313rem;
   background-color: #53c28b;
+}
+
+.btn:active {
+  border-color: #bbbbbb;
 }
