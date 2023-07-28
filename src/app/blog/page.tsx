@@ -1,9 +1,9 @@
+import postImage from "@public/images/indicators-for-a-fan-page.jpg";
 import { PostProps } from "@src/types/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./page.module.css";
-import postImage from '@public/images/indicators-for-a-fan-page.jpg';
 
 async function getData(): Promise<any> {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -22,14 +22,18 @@ const Blog = async () => {
   return (
     <>
       {postList?.map((post: PostProps) => (
-        <Link className={styles.container} key={post.id} href={`/blog/${post.id}`}>
+        <Link
+          className={styles.container}
+          key={post.id}
+          href={`/blog/${post.id}`}
+        >
           <div className={styles.imageContainer}>
             <Image
+              className={styles.image}
               src={postImage}
               alt={`${post.title} image`}
               width={400}
               height={250}
-              className={styles.image}
             />
           </div>
           <div className={styles.content}>

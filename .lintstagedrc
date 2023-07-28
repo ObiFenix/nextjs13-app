@@ -1,4 +1,4 @@
 {
-  "src/**/*.+(js|jsx|json|ts|tsx)": ["lint:fix"],
+  "src/**/*.{js,jsx,json,ts,tsx}": ["eslint --cache --cache-location .next/cache/eslint/ --fix"],
   "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write"]
 }

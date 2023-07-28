@@ -20,7 +20,7 @@ export default function About() {
       </div>
       <div className={styles.textContainer}>
         <div className={styles.item}>
-          <h3 className={styles.title}>Who Are We?</h3>
+          <h1 className={styles.title}>Who Are We?</h1>
           <p className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. obcaecati
             aliquam minus, odit distinctio, mollitia laboriosam quaerat fugiat
@@ -38,13 +38,11 @@ export default function About() {
             <br />
             Under development itaque officia quia quod. Ratione obcaecati labore
             public endorsements odit sapiente totam nisi, veritatis libero
-            Delectus, odit sapiente totam nisi, veritatis libero Delectus,
-            voluptatem doloremque itaque officia quia quod. Ratione obcaecati
-            labore eum.
+            Delectus, odit sapiente totam nisi, veritatis libero Delectus.
           </p>
         </div>
         <div className={styles.item}>
-          <h3 className={styles.title}>What We Do?</h3>
+          <h1 className={styles.title}>What We Do?</h1>
           <p className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. obcaecati
             aliquam minus, odit distinctio, mollitia laboriosam quaerat fugiat

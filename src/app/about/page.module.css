@@ -31,6 +31,10 @@
   gap: 1.9rem;
 }
 
+.title {
+  font-weight: bolder;
+}
+
 .description {
   font-size: 1.1rem;
   font-weight: 300;
