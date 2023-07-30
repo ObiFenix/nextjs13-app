@@ -14,8 +14,10 @@
   bottom: 1.3rem;
   left: 1.3rem;
   background-color: #53c28b;
-  padding: 0.3rem;
+  padding: 0.8rem;
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .textContainer {
@@ -32,6 +34,7 @@
 }
 
 .title {
+  font-size: 2rem;
   font-weight: bolder;
 }
 
