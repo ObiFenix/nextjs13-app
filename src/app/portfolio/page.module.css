@@ -41,6 +41,9 @@
   right: 0.6rem;
 }
 
-.selectTitle {
-  margin: 1.25rem 0;
+.galleryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #53c28b;
+  margin-bottom: 2rem;
 }

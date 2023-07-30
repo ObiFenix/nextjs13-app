@@ -1,27 +1,27 @@
-.container {
-}
 .categoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
   color: #53c28b;
+  text-transform: capitalize;
 }
 
 .item {
   display: flex;
   gap: 3.13rem;
-  margin-top: 3.13rem;
-  margin-bottom: 6.25rem;
+  margin: 4rem auto;
 }
 
 .item:nth-child(2n + 1) {
   flex-direction: row-reverse;
 }
 
-.imgContainer {
+.imageContainer {
   flex: 1;
   height: 31.25rem;
   position: relative;
 }
 
-.img {
+.image {
   object-fit: cover;
 }
 
@@ -29,8 +29,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
   justify-content: center;
+  gap: 1.25rem;
 }
 
 .title {

@@ -4,16 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./page.module.css";
+import { notFound } from "next/navigation";
 
 async function getData(): Promise<any> {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store"
   });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data from server");
-  }
-  return res.json();
+  return res.ok ? res.json() : notFound();
 }
 
 const Blog = async () => {
@@ -21,27 +19,29 @@ const Blog = async () => {
 
   return (
     <>
-      {postList?.map((post: PostProps) => (
-        <Link
-          className={styles.container}
-          key={post.id}
-          href={`/blog/${post.id}`}
-        >
-          <div className={styles.imageContainer}>
+      <h1 className={styles.pageTitle}>Blogs</h1>
+      <section className={styles.pageContainer}>
+        {/* Display all posts */}
+        {postList?.map((post: PostProps) => (
+          <Link
+            className={styles.container}
+            key={post.id}
+            href={`/blog/${post.id}`}
+          >
             <Image
               className={styles.image}
               src={postImage}
               alt={`${post.title} image`}
-              width={400}
-              height={250}
+              width={220}
+              height={220}
             />
-          </div>
-          <div className={styles.content}>
-            <h1 className={styles.title}>{post.title}</h1>
-            <p className={styles.desc}>{post.body}</p>
-          </div>
-        </Link>
-      ))}
+            <div className={styles.content}>
+              <h4 className={styles.title}>{post.title}</h4>
+              <p className={styles.description}>{post.body}</p>
+            </div>
+          </Link>
+        ))}
+      </section>
     </>
   );
 };

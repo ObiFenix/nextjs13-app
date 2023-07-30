@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import styles from "./page.module.css";
 
-export default function Layout({ children }: any) {
+export default function Portfolio({ children }: { children: ReactNode }) {
   return (
-    <div>
+    <>
       <h1 className={styles.mainTitle}>Portfolio</h1>
-      <div>{children}</div>
-    </div>
+      <section className={styles.container}>{children}</section>
+    </>
   );
 }

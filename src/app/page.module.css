@@ -15,9 +15,9 @@
   font-size: 4rem;
   font-weight: bolder;
   background: linear-gradient(to bottom, #194c33, #bbbbbb);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .description {

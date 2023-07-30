@@ -6,14 +6,14 @@ import styles from "./page.module.css";
 export default function About() {
   return (
     <section className={styles.container}>
-      <div className={styles.imgContainer}>
+      <div className={styles.imageContainer}>
         <Image
           src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           fill={true}
           alt="About Cover Image"
           className={styles.image}
         />
-        <div className={styles.imgText}>
+        <div className={styles.imageText}>
           <h1>Digital Storytellers</h1>
           <h2>Handcrafting award winning digital experiences</h2>
         </div>

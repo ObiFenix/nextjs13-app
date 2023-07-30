@@ -10,9 +10,9 @@ import ContactImage from "@public/images/contact.png";
 export default function Contact() {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Let's Keep in Touch</h1>
+      <h1 className={styles.title}>Let&apos;s Keep in Touch</h1>
       <div className={styles.content}>
-        <div className={styles.imgContainer}>
+        <div className={styles.imageContainer}>
           <Image
             className={styles.image}
             src={ContactImage}

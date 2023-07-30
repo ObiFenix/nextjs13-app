@@ -10,10 +10,7 @@ async function getData(id: number) {
     cache: "no-store"
   });
 
-  if (!res.ok) {
-    return notFound();
-  }
-  return res.json();
+  return res.ok ? res.json() : notFound();
 }
 
 const BlogPost = async ({ params }: any) => {
@@ -21,7 +18,7 @@ const BlogPost = async ({ params }: any) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.topContainer}>
+      <div className={styles.contentTop}>
         <div className={styles.info}>
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{body}</p>
@@ -36,7 +33,7 @@ const BlogPost = async ({ params }: any) => {
             <span className={styles.username}>{"MOA Fenix"}</span>
           </div>
         </div>
-        <div className={styles.imgContainer}>
+        <div className={styles.imageContainer}>
           <Image
             className={styles.image}
             src={postImage}
@@ -45,7 +42,7 @@ const BlogPost = async ({ params }: any) => {
           />
         </div>
       </div>
-      <div className={styles.content}>
+      <div className={styles.contentBottom}>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
           veritatis, beatae, iste natus atque quaerat aliquam ad neque in
