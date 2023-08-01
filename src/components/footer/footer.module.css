@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: space-between;
   font-size: 0.875rem;
+  height: 6.25rem;
+}
+
+.brand {
+  color: #53c28b;
 }
 
 .social {

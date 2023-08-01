@@ -25,7 +25,7 @@ export default function Contact() {
           <input className={styles.input} type="text" placeholder="Email" />
           <textarea
             className={styles.textArea}
-            rows={10}
+            rows={8}
             cols={30}
             placeholder="Message"
           />

@@ -9,7 +9,10 @@ import styles from "./footer.module.css";
 export default function Footer() {
   return (
     <div className={styles.container}>
-      <p>©2023 ObiFenix. All rights reserved.</p>
+      <p>
+        ©2023 <span className={styles.brand}>ObiFenix</span>. All rights
+        reserved.
+      </p>
       <div className={styles.social}>
         <Image src={Facebook} width={15} height={15} alt="Facebook Icon" />
         <Image src={Instagram} width={15} height={15} alt="Instagram Icon" />

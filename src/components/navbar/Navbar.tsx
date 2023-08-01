@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link className={styles.logo} href={"/"}>
-        ObiNextJS
+        <span>OBI</span>NextJS
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />
