@@ -1,7 +1,10 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  justify-content: center;
+  max-width: 70vw;
+  padding: 0 3.75rem;
+  margin: 0 auto;
 }
 
 .item {

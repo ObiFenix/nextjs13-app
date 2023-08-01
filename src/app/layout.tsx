@@ -21,11 +21,9 @@ const RootLayout = ({
   <html lang="en">
     <body className={inter.className}>
       <ThemeProvider>
-        <main className="container">
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </ThemeProvider>
     </body>
   </html>

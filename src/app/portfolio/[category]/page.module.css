@@ -1,14 +1,11 @@
-.categoryTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #53c28b;
-  text-transform: capitalize;
-}
-
 .item {
   display: flex;
   gap: 3.13rem;
-  margin: 4rem auto;
+}
+
+.item:nth-child(n-2) {
+  margin-top: 8;
+  margin-bottom: 20rem;
 }
 
 .item:nth-child(2n + 1) {
@@ -35,6 +32,14 @@
 
 .title {
   font-size: 3.13rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #53c28b;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
 }
 
 .description {

@@ -31,7 +31,7 @@
   background-image: url("/images/apps.jpg");
 }
 
-.mainTitle {
+.pageTitle {
   font-size: 6.25rem;
 }
 
@@ -41,9 +41,9 @@
   right: 0.6rem;
 }
 
-.galleryTitle {
+.sectionTitle {
+  color: #53c28b;
   font-size: 2rem;
   font-weight: bold;
-  color: #53c28b;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }

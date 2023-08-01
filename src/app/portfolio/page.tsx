@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Galleria() {
   return (
     <>
-      <h1 className={styles.galleryTitle}>Projects Galleria</h1>
+      <h1 className={styles.sectionTitle}>Projects Galleria</h1>
       <div className={styles.items}>
         <Link className={styles.item} href="/portfolio/illustrations">
           <span className={styles.title}>Illustrations</span>
