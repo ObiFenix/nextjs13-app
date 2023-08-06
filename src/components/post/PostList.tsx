@@ -1,5 +1,5 @@
 import PostCard from "@src/components/post/PostCard";
-import { PostProps } from "@src/types/types";
+import { Post } from "@src/types/types";
 import * as React from "react";
 
 async function getData() {
@@ -15,11 +15,11 @@ async function getData() {
 }
 
 const PostList: React.FC = async () => {
-  const postList: PostProps[] = await getData();
+  const postList: Post[] = await getData();
   return (
     <>
-      {postList.map((post: PostProps) => (
-        <PostCard key={post.id} {...post} />
+      {postList.map((post: Post) => (
+        <PostCard key={post._id} {...post} />
       ))}
     </>
   );

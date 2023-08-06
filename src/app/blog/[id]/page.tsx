@@ -2,11 +2,11 @@ import { notFound } from "next/navigation";
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import imageUrl from "@public/images/social/fb.png";
-import postImage from "@public/images/indicators-for-a-fan-page.jpg";
+import { Post } from "@src/types/types";
+import Link from "next/link";
 
-async function getData(id: number) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+async function getData(id: string) {
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
     cache: "no-store"
   });
 
@@ -14,29 +14,31 @@ async function getData(id: number) {
 }
 
 const BlogPost = async ({ params }: any) => {
-  const { title, body } = await getData(params.id);
+  const { title, description, image, source, author } = await getData(
+    params.id
+  );
 
   return (
     <div className={styles.container}>
       <div className={styles.contentTop}>
         <div className={styles.info}>
           <h1 className={styles.title}>{title}</h1>
-          <p className={styles.description}>{body}</p>
+          <p className={styles.description}>{description}</p>
           <div className={styles.author}>
             <Image
               className={styles.avatar}
               width={40}
               height={40}
-              src={imageUrl}
+              src={`${author?.avatar}`}
               alt="Author's Avatar Image"
             />
-            <span className={styles.username}>{"MOA Fenix"}</span>
+            <span className={styles.username}>{author?.username}</span>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Image
             className={styles.image}
-            src={postImage}
+            src={`${image}`}
             alt="BlogPost Image"
             fill={true}
           />
@@ -67,6 +69,12 @@ const BlogPost = async ({ params }: any) => {
           corporis quibusdam animi quam laboriosam natus atque perferendis et
           cupiditate placeat velit porro quas reprehenderit.
         </p>
+        <br />
+        <Link href={source}>
+          <code className={styles.source}>
+            Click here for more information!
+          </code>
+        </Link>
       </div>
     </div>
   );

@@ -27,11 +27,11 @@
 .title {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 0.313rem;
   line-height: 1.5rem;
+  margin-bottom: 0.313rem;
   text-transform: capitalize;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
